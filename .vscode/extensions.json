@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
+    "dbaeumer.vscode-eslint",
+    "formulahendry.auto-rename-tag",
+    "pranaygp.vscode-css-peek",
+    "zignd.html-css-class-completion",
+    "ritwickdey.liveserver",
+    "pflannery.vscode-versionlens",
+    "eamodio.gitlens",
+    "usernamehw.errorlens"
+  ]
+}
