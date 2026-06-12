@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="MAYA — Chief Growth Architect & Founder of MayaVerse. Declassified 3D interactive intelligence dossier, strategic growth codex, victories, and expansion manifesto."
+      content="MAYA — Founder &amp; Chief Growth Partner at MayaVerse. Interactive founder profile, core growth laws, client victories, and growth manifesto."
     />
-    <title>MAYA | Chief Growth Architect · 3D Immersive 8K Dossier</title>
+    <title>MAYA | Founder &amp; Chief Growth Partner · MayaVerse</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
 
     <!-- Google Fonts -->
     <link
@@ -27,10 +28,10 @@
         --bg-black: #000000;
         --deep-abyss: #070100;
         --coal: #0c0d10;
-        --ember: #ff4d00;
+        --ember: #dc2626;
         --fire: #e61515;
-        --gold: #ffb347;
-        --dark-gold: #b8860b;
+        --gold: #94a3b8;
+        --dark-gold: #475569;
         --text-white: #ffffff;
         --text-body: #a8b2c0;
         --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -62,7 +63,7 @@
         position: fixed;
         inset: 0;
         background:
-          radial-gradient(circle at 15% 25%, rgba(255, 60, 0, 0.09) 0%, transparent 60%),
+          radial-gradient(circle at 15% 25%, rgba(185, 28, 28, 0.09) 0%, transparent 60%),
           radial-gradient(circle at 85% 75%, rgba(139, 13, 13, 0.07) 0%, transparent 55%),
           linear-gradient(180deg, var(--bg-black) 0%, var(--deep-abyss) 100%);
         pointer-events: none;
@@ -127,7 +128,7 @@
         left: 6%;
         z-index: 20;
         background: rgba(10, 2, 2, 0.65);
-        border: 1px solid rgba(255, 77, 0, 0.22);
+        border: 1px solid rgba(220, 38, 38, 0.22);
         padding: 12px 28px;
         border-radius: 30px;
         color: rgba(220, 200, 185, 0.72);
@@ -145,17 +146,17 @@
         transition: all 0.5s var(--ease-out-expo);
         box-shadow:
           0 6px 20px rgba(0, 0, 0, 0.7),
-          0 0 15px rgba(255, 77, 0, 0.02);
+          0 0 15px rgba(220, 38, 38, 0.02);
       }
 
       .btn-return-abyss:hover {
         color: var(--text-white);
         border-color: var(--ember);
-        background: rgba(255, 77, 0, 0.1);
+        background: rgba(220, 38, 38, 0.1);
         transform: translateX(-5px);
         box-shadow:
           0 8px 25px rgba(0, 0, 0, 0.8),
-          0 0 30px rgba(255, 77, 0, 0.2);
+          0 0 30px rgba(220, 38, 38, 0.2);
       }
 
       .btn-return-abyss i {
@@ -199,10 +200,10 @@
         position: absolute;
         inset: -14%;
         border-radius: 50%;
-        border: 2px dashed rgba(255, 77, 0, 0.35);
+        border: 2px dashed rgba(220, 38, 38, 0.35);
         box-shadow:
-          0 0 50px rgba(255, 77, 0, 0.1),
-          inset 0 0 30px rgba(255, 77, 0, 0.05);
+          0 0 50px rgba(220, 38, 38, 0.1),
+          inset 0 0 30px rgba(220, 38, 38, 0.05);
         animation: spinDashedRing 42s linear infinite;
         pointer-events: none;
         transform: translateZ(-20px); /* Sits slightly deeper */
@@ -284,11 +285,11 @@
         height: 100%;
         border-radius: 24px;
         overflow: hidden;
-        border: 1px solid rgba(255, 106, 0, 0.35);
+        border: 1px solid rgba(220, 38, 38, 0.35);
         background: rgba(12, 13, 16, 0.85);
         box-shadow:
           0 35px 90px rgba(0, 0, 0, 0.98),
-          0 0 50px rgba(255, 77, 0, 0.22),
+          0 0 50px rgba(220, 38, 38, 0.22),
           inset 0 0 45px rgba(0, 0, 0, 0.95);
         position: relative;
         z-index: 2;
@@ -336,8 +337,8 @@
         position: absolute;
         inset: 0;
         background-image:
-          linear-gradient(rgba(255, 77, 0, 0.08) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255, 77, 0, 0.08) 1px, transparent 1px);
+          linear-gradient(rgba(220, 38, 38, 0.08) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(220, 38, 38, 0.08) 1px, transparent 1px);
         background-size: 24px 24px;
         z-index: 3;
         pointer-events: none;
@@ -349,7 +350,7 @@
       .portrait-hud-crosshairs {
         position: absolute;
         inset: 15%;
-        border: 1px solid rgba(255, 179, 71, 0.08);
+        border: 1px solid rgba(148, 163, 184, 0.08);
         border-radius: 50%;
         z-index: 4;
         pointer-events: none;
@@ -360,7 +361,7 @@
       .portrait-hud-crosshairs::after {
         content: '';
         position: absolute;
-        background: rgba(255, 77, 0, 0.35);
+        background: rgba(220, 38, 38, 0.35);
       }
       .portrait-hud-crosshairs::before {
         top: 0;
@@ -393,7 +394,11 @@
       .portrait-smoke-overlay {
         position: absolute;
         inset: 0;
-        background: radial-gradient(circle at 50% 100%, rgba(255, 77, 0, 0.16) 0%, transparent 65%);
+        background: radial-gradient(
+          circle at 50% 100%,
+          rgba(220, 38, 38, 0.16) 0%,
+          transparent 65%
+        );
         z-index: 3;
         pointer-events: none;
         mix-blend-mode: screen;
@@ -413,7 +418,7 @@
 
       .dossier-terminal {
         background: linear-gradient(135deg, rgba(12, 13, 16, 0.95) 0%, rgba(5, 5, 7, 0.99) 100%);
-        border: 1.5px solid rgba(255, 106, 0, 0.25);
+        border: 1.5px solid rgba(220, 38, 38, 0.25);
         border-radius: 24px;
         padding: 44px 48px;
         position: relative;
@@ -464,8 +469,8 @@
         align-items: center;
         gap: 8px;
         padding: 5px 12px;
-        background: rgba(255, 77, 0, 0.08);
-        border: 1px solid rgba(255, 77, 0, 0.35);
+        background: rgba(220, 38, 38, 0.08);
+        border: 1px solid rgba(220, 38, 38, 0.35);
         border-radius: 4px;
         margin-bottom: 12px;
       }
@@ -505,14 +510,14 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         color: var(--gold);
-        text-shadow: 0 0 8px rgba(255, 138, 0, 0.35);
+        text-shadow: 0 0 8px rgba(148, 163, 184, 0.35);
       }
 
       /* Premium Segmented HUD Menu (Expanded to 5 tabs!) */
       .hud-tabs-selector {
         display: flex;
         background: rgba(10, 2, 2, 0.6);
-        border: 1px solid rgba(255, 77, 0, 0.14);
+        border: 1px solid rgba(220, 38, 38, 0.14);
         padding: 5px;
         border-radius: 30px;
         margin-bottom: 30px;
@@ -549,14 +554,14 @@
 
       .hud-tab-btn:hover {
         color: var(--text-white);
-        background: rgba(255, 77, 0, 0.02);
+        background: rgba(220, 38, 38, 0.02);
       }
 
       .hud-tab-btn.active {
         color: var(--gold);
-        background: rgba(255, 77, 0, 0.08);
-        border-color: rgba(255, 77, 0, 0.32);
-        text-shadow: 0 0 8px rgba(255, 138, 0, 0.45);
+        background: rgba(220, 38, 38, 0.08);
+        border-color: rgba(220, 38, 38, 0.32);
+        text-shadow: 0 0 8px rgba(148, 163, 184, 0.45);
       }
 
       .hud-tab-dot {
@@ -607,7 +612,7 @@
 
       .intel-card {
         background: rgba(10, 2, 2, 0.4);
-        border: 1px solid rgba(255, 77, 0, 0.12);
+        border: 1px solid rgba(220, 38, 38, 0.12);
         border-radius: 10px;
         padding: 18px 20px;
         display: flex;
@@ -617,8 +622,8 @@
       }
 
       .intel-card:hover {
-        border-color: rgba(255, 77, 0, 0.3);
-        background: rgba(255, 77, 0, 0.03);
+        border-color: rgba(220, 38, 38, 0.3);
+        background: rgba(220, 38, 38, 0.03);
       }
 
       .intel-num {
@@ -626,7 +631,7 @@
         font-size: 1.8rem;
         font-weight: 800;
         color: var(--gold);
-        text-shadow: 0 0 10px rgba(255, 138, 0, 0.35);
+        text-shadow: 0 0 10px rgba(148, 163, 184, 0.35);
         line-height: 1.1;
       }
 
@@ -651,14 +656,14 @@
         gap: 6px;
         padding: 12px 18px;
         background: rgba(10, 2, 2, 0.3);
-        border: 1px solid rgba(255, 77, 0, 0.08);
+        border: 1px solid rgba(220, 38, 38, 0.08);
         border-radius: 12px;
         transition: all 0.4s ease;
       }
 
       .codex-skill-item:hover {
-        border-color: rgba(255, 77, 0, 0.22);
-        background: rgba(255, 77, 0, 0.02);
+        border-color: rgba(220, 38, 38, 0.22);
+        background: rgba(220, 38, 38, 0.02);
       }
 
       .skill-meta-label {
@@ -681,14 +686,14 @@
         font-size: 0.9rem;
         font-weight: 800;
         color: var(--gold);
-        text-shadow: 0 0 8px rgba(255, 138, 0, 0.4);
+        text-shadow: 0 0 8px rgba(148, 163, 184, 0.4);
       }
 
       .skill-track-outer {
         width: 100%;
         height: 6px;
-        background: rgba(255, 77, 0, 0.05);
-        border: 1px solid rgba(255, 77, 0, 0.12);
+        background: rgba(220, 38, 38, 0.05);
+        border: 1px solid rgba(220, 38, 38, 0.12);
         border-radius: 3px;
         overflow: hidden;
         position: relative;
@@ -698,7 +703,7 @@
         height: 100%;
         width: 0%;
         background: linear-gradient(90deg, var(--ember) 0%, var(--gold) 100%);
-        box-shadow: 0 0 10px rgba(255, 77, 0, 0.75);
+        box-shadow: 0 0 10px rgba(220, 38, 38, 0.75);
         border-radius: 3px;
         transition: width 1.4s cubic-bezier(0.16, 1, 0.3, 1);
       }
@@ -716,7 +721,7 @@
         overflow-y: auto;
         padding-right: 12px;
         scrollbar-width: thin;
-        scrollbar-color: var(--ember) rgba(255, 77, 0, 0.05);
+        scrollbar-color: var(--ember) rgba(220, 38, 38, 0.05);
       }
 
       .laws-scroll-box::-webkit-scrollbar {
@@ -735,7 +740,7 @@
 
       .law-item {
         background: rgba(10, 2, 2, 0.35);
-        border: 1px solid rgba(255, 77, 0, 0.08);
+        border: 1px solid rgba(220, 38, 38, 0.08);
         border-left: 2px solid var(--gold);
         border-radius: 6px;
         padding: 12px 16px;
@@ -743,8 +748,8 @@
       }
 
       .law-item:hover {
-        border-color: rgba(255, 77, 0, 0.2);
-        background: rgba(255, 77, 0, 0.02);
+        border-color: rgba(220, 38, 38, 0.2);
+        background: rgba(220, 38, 38, 0.02);
       }
 
       .law-title {
@@ -772,7 +777,7 @@
 
       .victory-item {
         background: rgba(10, 2, 2, 0.4);
-        border: 1px solid rgba(255, 106, 0, 0.14);
+        border: 1px solid rgba(220, 38, 38, 0.14);
         border-radius: 12px;
         padding: 16px 20px;
         position: relative;
@@ -782,7 +787,7 @@
 
       .victory-item:hover {
         border-color: var(--ember);
-        box-shadow: 0 0 15px rgba(255, 77, 0, 0.08);
+        box-shadow: 0 0 15px rgba(220, 38, 38, 0.08);
       }
 
       .victory-header-row {
@@ -798,8 +803,8 @@
         font-weight: 700;
         letter-spacing: 1.5px;
         color: var(--ember);
-        background: rgba(255, 77, 0, 0.08);
-        border: 1px solid rgba(255, 77, 0, 0.22);
+        background: rgba(220, 38, 38, 0.08);
+        border: 1px solid rgba(220, 38, 38, 0.22);
         padding: 2px 8px;
         border-radius: 3px;
       }
@@ -809,7 +814,7 @@
         font-size: 1rem;
         font-weight: 800;
         color: var(--gold);
-        text-shadow: 0 0 8px rgba(255, 138, 0, 0.4);
+        text-shadow: 0 0 8px rgba(148, 163, 184, 0.4);
       }
 
       .victory-title {
@@ -856,7 +861,7 @@
       .btn-alliance-trigger {
         width: 100%;
         background: linear-gradient(135deg, rgba(122, 10, 10, 0.22) 0%, rgba(20, 3, 3, 0.1) 100%);
-        border: 1px solid rgba(255, 106, 0, 0.35);
+        border: 1px solid rgba(220, 38, 38, 0.35);
         border-radius: 6px;
         padding: 16px 20px;
         margin-top: 35px;
@@ -885,17 +890,17 @@
         background: linear-gradient(
           90deg,
           transparent,
-          rgba(255, 200, 80, 0.14),
+          rgba(148, 163, 184, 0.14),
           rgba(255, 255, 255, 0.28),
-          rgba(255, 200, 80, 0.14),
+          rgba(148, 163, 184, 0.14),
           transparent
         );
         background-size: 200% 100%;
-        animation: goldShimmerSweep 4.5s linear infinite;
+        animation: steelShimmerSweep 4.5s linear infinite;
         opacity: 0.85;
       }
 
-      @keyframes goldShimmerSweep {
+      @keyframes steelShimmerSweep {
         0% {
           background-position: -200% 0;
         }
@@ -909,7 +914,7 @@
         border-color: #ffffff;
         background: linear-gradient(135deg, var(--ember) 0%, var(--gold) 100%);
         box-shadow:
-          0 0 35px rgba(255, 138, 0, 0.55),
+          0 0 35px rgba(148, 163, 184, 0.55),
           0 8px 25px rgba(0, 0, 0, 0.5),
           inset 0 0 10px rgba(255, 255, 255, 0.25);
         transform: translateY(-2px);
@@ -980,7 +985,7 @@
         cy="500"
         r="450"
         fill="none"
-        stroke="#ff4d00"
+        stroke="#dc2626"
         stroke-width="1.5"
         stroke-dasharray="10 30"
         opacity="0.4"
@@ -990,7 +995,7 @@
         cy="500"
         r="390"
         fill="none"
-        stroke="#ffb347"
+        stroke="#94a3b8"
         stroke-width="2"
         stroke-dasharray="100 15 20 15"
         opacity="0.6"
@@ -1007,7 +1012,7 @@
       />
       <path
         d="M500 50 L500 950 M50 500 L950 500 M182 182 L818 818 M182 818 L818 182"
-        stroke="#ff4d00"
+        stroke="#dc2626"
         stroke-width="1"
         opacity="0.25"
       />
@@ -1017,7 +1022,7 @@
       <!-- Return Button Aligned Top Left -->
       <a href="index.html#home" class="btn-return-abyss">
         <i data-lucide="chevron-left"></i>
-        <span>◈ Return to the Abyss</span>
+        <span>◈ Return to Home</span>
       </a>
 
       <div class="cinematic-grid">
@@ -1042,7 +1047,7 @@
 
             <!-- Layer 4: HUD physical floating crosshairs -->
             <div class="portrait-hud-crosshairs"></div>
-            <span class="portrait-hud-status-line">◈ MATRIX ENGINE v9.0</span>
+            <span class="portrait-hud-status-line">◈ GROWTH ENGINE v2.0</span>
 
             <!-- Layer 5: smoke drift -->
             <div class="portrait-smoke-overlay"></div>
@@ -1057,25 +1062,25 @@
             <div class="terminal-header">
               <div class="status-badge-capsule">
                 <span class="status-dot"></span>
-                <span class="status-text">DECODED &amp; DECLASSIFIED INTEL</span>
+                <span class="status-text">FOUNDER &amp; CHIEF STRATEGIST</span>
               </div>
               <h1 class="founder-headline-title">MAYA</h1>
-              <p class="founder-role-sub">Chief Growth Architect &amp; Visionary</p>
+              <p class="founder-role-sub">Founder &amp; Chief Growth Partner</p>
             </div>
 
             <!-- Segmented HUD Mode Menu (Expanded to 5 options) -->
             <div class="hud-tabs-selector">
               <button type="button" class="hud-tab-btn active" data-hud-tab="archetype">
                 <span class="hud-tab-dot"></span>
-                <span>◈ Archetype</span>
+                <span>◈ About Maya</span>
               </button>
               <button type="button" class="hud-tab-btn" data-hud-tab="codex">
                 <span class="hud-tab-dot"></span>
-                <span>◈ Codex</span>
+                <span>◈ Expertise</span>
               </button>
               <button type="button" class="hud-tab-btn" data-hud-tab="laws">
                 <span class="hud-tab-dot"></span>
-                <span>◈ 7 Laws</span>
+                <span>◈ Growth Laws</span>
               </button>
               <button type="button" class="hud-tab-btn" data-hud-tab="victories">
                 <span class="hud-tab-dot"></span>
@@ -1083,7 +1088,7 @@
               </button>
               <button type="button" class="hud-tab-btn" data-hud-tab="manifesto">
                 <span class="hud-tab-dot"></span>
-                <span>◈ Manifesto</span>
+                <span>◈ Our Manifesto</span>
               </button>
             </div>
 
@@ -1092,23 +1097,24 @@
               <!-- Panel A: Archetype (Origin Bio) -->
               <div class="hud-panel active" data-hud-panel="archetype">
                 <p class="panel-body-desc">
-                  A digital alchemist who forged MayaVerse to rescue elite brands from standard
-                  digital noise. Operating in the absolute depths of conversion metrics, search
-                  mechanics, and luxury styling, she carves high-performance digital monuments out
-                  of raw entrepreneurial passion.
+                  A passionate growth marketer who founded
+                  <span class="highlight-crimson">MayaVerse</span> to help ambitious businesses
+                  stand out from standard digital noise. Specializing in conversion rates, search
+                  visibility, and premium brand aesthetics, she designs high-performance customer
+                  acquisition strategies to accelerate growth.
                 </p>
                 <div class="intel-counters-row">
                   <div class="intel-card">
                     <span class="intel-num" data-val="9">0</span>
-                    <span class="intel-lbl">Yrs Mastery</span>
+                    <span class="intel-lbl">Years of Experience</span>
                   </div>
                   <div class="intel-card">
                     <span class="intel-num" data-val="100">0</span>
-                    <span class="intel-lbl">Brands Ignited</span>
+                    <span class="intel-lbl">Brands Scaled</span>
                   </div>
                   <div class="intel-card">
                     <span class="intel-num" data-val="85">0</span>
-                    <span class="intel-lbl">M+ Net Growth</span>
+                    <span class="intel-lbl">Net Growth</span>
                   </div>
                 </div>
               </div>
@@ -1118,7 +1124,7 @@
                 <div class="codex-skills-list">
                   <div class="codex-skill-item">
                     <div class="skill-meta-label">
-                      <span class="skill-lbl-title">Empire Scaling &amp; Vision</span>
+                      <span class="skill-lbl-title">Brand Strategy &amp; Growth</span>
                       <span class="skill-lbl-pct">98%</span>
                     </div>
                     <div class="skill-track-outer">
@@ -1131,7 +1137,7 @@
                   </div>
                   <div class="codex-skill-item">
                     <div class="skill-meta-label">
-                      <span class="skill-lbl-title">Conversion Architecture</span>
+                      <span class="skill-lbl-title">Conversion Optimization</span>
                       <span class="skill-lbl-pct">95%</span>
                     </div>
                     <div class="skill-track-outer">
@@ -1144,7 +1150,7 @@
                   </div>
                   <div class="codex-skill-item">
                     <div class="skill-meta-label">
-                      <span class="skill-lbl-title">Runic Growth Hacking</span>
+                      <span class="skill-lbl-title">Search Engine Optimization</span>
                       <span class="skill-lbl-pct">92%</span>
                     </div>
                     <div class="skill-track-outer">
@@ -1163,52 +1169,52 @@
                 <div class="laws-scroll-box">
                   <div class="laws-list">
                     <div class="law-item">
-                      <h4 class="law-title">1. Monuments Over Campaigns</h4>
+                      <h4 class="law-title">1. Assets Over Campaigns</h4>
                       <p class="law-desc">
                         Do not build short-lived, high-budget ad campaigns. Build solid digital
                         assets that accumulate compounding organic brand authority over years.
                       </p>
                     </div>
                     <div class="law-item">
-                      <h4 class="law-title">2. Sun-Aligned Geometry</h4>
+                      <h4 class="law-title">2. User-Centric Positioning</h4>
                       <p class="law-desc">
                         Position every word, pixel, and call-to-action precisely in line with the
                         target audience's core buying psychology and pain points.
                       </p>
                     </div>
                     <div class="law-item">
-                      <h4 class="law-title">3. Dominance Over Noise</h4>
+                      <h4 class="law-title">3. Authority Over Noise</h4>
                       <p class="law-desc">
-                        Do not strive for basic compliance. Strike for complete industry visual
-                        authority to naturally attract and bind high-intent buyers.
+                        Do not strive for basic compliance. Build strong visual and search authority
+                        to naturally attract and retain high-intent buyers.
                       </p>
                     </div>
                     <div class="law-item">
-                      <h4 class="law-title">4. The Precision Ratio</h4>
+                      <h4 class="law-title">4. The Precision Funnel</h4>
                       <p class="law-desc">
                         A highly-focused, lean funnel designed with pixel precision is 10 times more
                         effective than a high-spend digital campaign with layout gaps.
                       </p>
                     </div>
                     <div class="law-item">
-                      <h4 class="law-title">5. Abyssal Attribution</h4>
+                      <h4 class="law-title">5. Revenue Attribution</h4>
                       <p class="law-desc">
                         Never rely on vanity traffic metrics or superficial click counts. Deep dive
-                        directly into margins, conversion costs, and attributable net profit.
+                        directly into conversion costs, customer lifetime value, and net profit.
                       </p>
                     </div>
                     <div class="law-item">
-                      <h4 class="law-title">6. Molten Response Speed</h4>
+                      <h4 class="law-title">6. Uncompromising Speed</h4>
                       <p class="law-desc">
                         Load pages instantly (under 1.2s). A fraction of a second of loading lag is
-                        a gate that turns away passionate entrepreneurs from your empire.
+                        a gate that turns away prospective clients from your business.
                       </p>
                     </div>
                     <div class="law-item">
-                      <h4 class="law-title">7. Visual Retention Locks</h4>
+                      <h4 class="law-title">7. Visual Retention</h4>
                       <p class="law-desc">
-                        The acquisition is only the drawbridge. Keep customers bound to your
-                        ecosystem through exceptional visual identity and premium UX presentation.
+                        The acquisition is only the drawbridge. Keep customers engaged with your
+                        ecosystem through exceptional visual identity and premium user experience.
                       </p>
                     </div>
                   </div>
@@ -1223,7 +1229,7 @@
                       <span class="victory-tag">SaaS Growth</span>
                       <span class="victory-metric">+620% Traffic</span>
                     </div>
-                    <h4 class="victory-title">Programmatic SEO Capture Engine</h4>
+                    <h4 class="victory-title">Programmatic SEO &amp; Content Strategy</h4>
                     <p class="victory-desc">
                       Built a custom programmatic keyword hub for a SaaS giant. Captured 42,000
                       active organic seekers and multiplied MRR by 4.2x in 11 months.
@@ -1231,7 +1237,7 @@
                   </div>
                   <div class="victory-item">
                     <div class="victory-header-row">
-                      <span class="victory-tag">Luxury E-Com</span>
+                      <span class="victory-tag">Luxury E-Commerce</span>
                       <span class="victory-metric">4.9% Conversion</span>
                     </div>
                     <h4 class="victory-title">Visual Identity Overhaul &amp; Storefront</h4>
@@ -1247,19 +1253,20 @@
               <div class="hud-panel" data-hud-panel="manifesto">
                 <div class="manifesto-quote-card">
                   <p class="manifesto-quote-text">
-                    "I do not build standard campaigns. I construct permanent digital monuments that
-                    command absolute industry authority. I do not buy simple traffic — I align the
-                    paths of active seekers directly to your empire's gates."
+                    "We do not build short-term marketing campaigns. We construct long-term digital
+                    assets that establish industry leadership. We don't just buy ad traffic — we
+                    align your search visibility and user experience to guide prospective buyers
+                    directly to your business."
                   </p>
                 </div>
-                <p class="manifesto-sig">◈ MAYA, CHIEF GROWTH ARCHITECT</p>
+                <p class="manifesto-sig">◈ MAYA, FOUNDER &amp; CHIEF STRATEGIST</p>
               </div>
             </div>
 
             <!-- Standalone CTA Alliance Link -->
             <a href="index.html#contact" class="btn-alliance-trigger">
               <i data-lucide="shield-alert"></i>
-              <span>Initiate Elite Growth Alliance &gt;</span>
+              <span>Schedule a Growth Strategy Session &gt;</span>
             </a>
           </div>
         </div>
@@ -1302,7 +1309,7 @@
             this.opacity = Math.random() * 0.8 + 0.2;
             this.decay = Math.random() * 0.0016 + 0.0004;
 
-            const colors = ['255, 77, 0', '230, 21, 21', '255, 179, 71', '139, 13, 13'];
+            const colors = ['220, 38, 38', '230, 21, 21', '148, 163, 184', '139, 13, 13'];
             this.color = colors[Math.floor(Math.random() * colors.length)];
           }
 

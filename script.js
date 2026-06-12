@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Play stunning cinematic exit flash
     gsap.to('.hero-crucible-portal', {
       scale: 1.15,
-      filter: 'brightness(3) contrast(1.5) drop-shadow(0 0 50px #ff4d00)',
+      filter: 'brightness(3) contrast(1.5) drop-shadow(0 0 50px #dc2626)',
       opacity: 0,
       duration: 0.6,
       ease: 'power4.inOut',
@@ -272,9 +272,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Warm fire palette — oranges and golds from Brand Kit
         const palette = [
-          '255, 77, 0' /* Brand Molten Orange */,
-          '230, 21, 21' /* Brand Vibrant Crimson */,
-          '255, 138, 0' /* Brand Glow Yellow */,
+          '220, 38, 38' /* Brand Vibrant Crimson */,
+          '230, 21, 21' /* Brand Vibrant Crimson Core */,
+          '148, 163, 184' /* Steel Alloy */,
           '139, 13, 13' /* Brand Deep Crimson */,
         ];
         this.color = palette[Math.floor(Math.random() * palette.length)];
@@ -430,15 +430,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       0.32
     )
-    .to(
-      '#hero-trust-strip',
-      {
-        opacity: 1,
-        duration: 0.8,
-        ease: 'power2.out',
-      },
-      0.42
-    )
+
     .to(
       '#hero-scroll-indicator',
       {
@@ -598,8 +590,8 @@ document.addEventListener('DOMContentLoaded', () => {
         width: ${size}px;
         height: ${size}px;
         border-radius: 50%;
-        background: radial-gradient(circle, #ffe06a 0%, #ff4800 70%, transparent 100%);
-        box-shadow: 0 0 ${size * 2}px rgba(255, 80, 0, 0.9), 0 0 ${size * 4}px rgba(255, 50, 0, 0.5);
+        background: radial-gradient(circle, #cbd5e1 0%, #dc2626 70%, transparent 100%);
+        box-shadow: 0 0 ${size * 2}px rgba(220, 38, 38, 0.9), 0 0 ${size * 4}px rgba(185, 28, 28, 0.5);
         opacity: 0;
         pointer-events: none;
         animation: riseAndDrift ${duration}s linear infinite;
@@ -636,8 +628,8 @@ document.addEventListener('DOMContentLoaded', () => {
         width: ${size}px;
         height: ${size}px;
         border-radius: 50%;
-        background: radial-gradient(circle, #ffe06a 0%, #ff4800 70%, transparent 100%);
-        box-shadow: 0 0 ${size * 2}px rgba(255, 80, 0, 0.9), 0 0 ${size * 4}px rgba(255, 50, 0, 0.5);
+        background: radial-gradient(circle, #cbd5e1 0%, #dc2626 70%, transparent 100%);
+        box-shadow: 0 0 ${size * 2}px rgba(220, 38, 38, 0.9), 0 0 ${size * 4}px rgba(185, 28, 28, 0.5);
         opacity: 0;
         pointer-events: none;
         animation: riseAndDrift ${duration}s linear infinite;
@@ -666,8 +658,8 @@ document.addEventListener('DOMContentLoaded', () => {
           width: ${size}px;
           height: ${size}px;
           border-radius: 50%;
-          background: #FFE596;
-          box-shadow: 0 0 8px #FF5500, 0 0 3px #FFE06A;
+          background: #e2e8f0;
+          box-shadow: 0 0 8px #dc2626, 0 0 3px #cbd5e1;
           top: 50%;
           left: 50%;
           pointer-events: none;
@@ -709,11 +701,11 @@ document.addEventListener('DOMContentLoaded', () => {
       roiBase: 3.2,
       roiVar: 1.2,
       leadCost: 650,
-      channels: ['Website Design', 'Branding', 'Content Strategy'],
+      channels: ['Digital Foundations', 'Identity Forging', 'Narrative Engineering'],
       checklist: [
         'Perform extensive competitor & voice audit',
-        'Engineer luxury, ultra-fast custom website',
-        'Design cohesive high-fashion visual assets',
+        'Build conversion-engineered Digital Foundations',
+        'Forge premium visual identity & branding assets',
         'Establish core social identity guidelines',
       ],
     },
@@ -721,11 +713,11 @@ document.addEventListener('DOMContentLoaded', () => {
       roiBase: 3.8,
       roiVar: 1.6,
       leadCost: 520,
-      channels: ['SEO Authority', 'Google Ads (SEM)', 'Blog Articles'],
+      channels: ['Visibility Ascension', 'Strategic Expansion', 'Content Authority'],
       checklist: [
-        'Perform search intent keyword profiling',
-        'Deploy targeted high-ROI Google Ads campaigns',
-        'Establish weekly authority-building blog schedule',
+        'Perform intent-based keyword research for Visibility Ascension',
+        'Activate high-ROI paid Strategic Expansion campaigns',
+        'Implement content schedule for Content Authority',
         'Configure deep behavioral analytics tracking',
       ],
     },
@@ -733,10 +725,10 @@ document.addEventListener('DOMContentLoaded', () => {
       roiBase: 4.2,
       roiVar: 2.2,
       leadCost: 440,
-      channels: ['Website CRO', 'Sales Copywriting', 'Email Flow Setup'],
+      channels: ['Digital Foundations', 'Narrative Engineering', 'Empire Expansion'],
       checklist: [
         'Conduct page-by-page layout friction audits',
-        'Deploy persuasive copywriting on checkout points',
+        'Deploy Narrative Engineering to refine sales copywriting',
         'Configure secondary abandoned cart flows',
         'Implement dynamic hotjar user heatmapping',
       ],
@@ -745,11 +737,11 @@ document.addEventListener('DOMContentLoaded', () => {
       roiBase: 3.0,
       roiVar: 1.8,
       leadCost: 380,
-      channels: ['GMB Optimization', 'Local Citations', 'Geo-Targeted Ads'],
+      channels: ['Local Dominance', 'Strategic Expansion', 'Identity Forging'],
       checklist: [
-        'Claim, verify, and fully keyword-optimize GMB profile',
+        'Optimize GMB Profile for Local Dominance',
         'Execute comprehensive local directories citation campaign',
-        'Run highly-focused geo-fenced search ads',
+        'Deploy geo-targeted ads for Strategic Expansion',
         'Setup organic automated review-acquisition engine',
       ],
     },
@@ -1056,10 +1048,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Stagger step numbers with glowing ring burst
             document.querySelectorAll('.step-number').forEach((el, i) => {
               setTimeout(() => {
-                el.style.borderColor = 'rgba(255, 77, 0, 0.75)';
+                el.style.borderColor = 'rgba(220, 38, 38, 0.75)';
                 el.style.boxShadow =
-                  '0 0 20px rgba(255, 77, 0, 0.45), 0 0 40px rgba(255, 40, 0, 0.2)';
-                el.style.background = 'rgba(255, 60, 0, 0.12)';
+                  '0 0 20px rgba(220, 38, 38, 0.45), 0 0 40px rgba(153, 27, 27, 0.2)';
+                el.style.background = 'rgba(185, 28, 28, 0.12)';
                 gsap.fromTo(
                   el,
                   { scale: 0.6, opacity: 0 },
@@ -1094,8 +1086,8 @@ document.addEventListener('DOMContentLoaded', () => {
                       position: absolute;
                       width: 3px; height: 3px;
                       border-radius: 50%;
-                      background: #ff8a00;
-                      box-shadow: 0 0 6px #ff4800;
+                      background: #94a3b8;
+                      box-shadow: 0 0 6px #dc2626;
                       pointer-events: none;
                       z-index: 20;
                     `;
@@ -1216,7 +1208,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const waves = [
         { amplitude: 24, frequency: 0.003, speed: 0.006, color: 'rgba(122, 10, 10, 0.45)' },
         { amplitude: 18, frequency: 0.005, speed: -0.009, color: 'rgba(255, 26, 26, 0.35)' },
-        { amplitude: 12, frequency: 0.007, speed: 0.012, color: 'rgba(255, 106, 0, 0.55)' },
+        { amplitude: 12, frequency: 0.007, speed: 0.012, color: 'rgba(220, 38, 38, 0.55)' },
       ];
 
       waves.forEach((w) => {
