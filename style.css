@@ -2803,6 +2803,18 @@ ul {
   color: rgba(168, 178, 192, 0.85);
 }
 
+/* Teaser card helpers to avoid inline styles */
+.dossier-teaser-stats {
+  margin-bottom: 28px;
+}
+
+.dossier-teaser-btn {
+  width: 100%;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 24px;
+}
+
 /* Codex skills panel elements */
 .dossier-skills {
   display: flex;
